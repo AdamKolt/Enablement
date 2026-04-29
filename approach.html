@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approach – Adam Kolt MBA | How I Build Enablement</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .approach-hero {
+      padding: 48px 0 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .approach-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 14px;
+      line-height: 1.15;
+    }
+
+    .approach-hero .lede {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .principle-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 22px 22px 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .principle-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 14px;
+    }
+
+    .principle-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .principle-num {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .principle-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 10px;
+      line-height: 1.25;
+    }
+
+    .principle-card p {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.6;
+      margin: 0 0 14px;
+      flex: 1;
+    }
+
+    .principle-card a.see-case {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      display: inline-block;
+    }
+
+    .principle-card a.see-case:hover {
+      color: var(--gold);
+    }
+
+    .process-section {
+      margin-bottom: 48px;
+    }
+
+    .process-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+
+    .process-section .process-lede {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin: 0 0 24px;
+      max-width: 720px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .process-step {
+      background: #F7F6F2;
+      border-left: 3px solid var(--gold);
+      padding: 16px 18px;
+      border-radius: 4px;
+    }
+
+    .process-step .step-num {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .process-step h4 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+
+    .process-step p {
+      font-size: 12.5px;
+      color: #444;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .closing-callout {
+      background: var(--navy);
+      color: #fff;
+      padding: 26px 30px;
+      border-radius: 6px;
+      margin-bottom: 40px;
+    }
+
+    .closing-callout h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: #fff;
+    }
+
+    .closing-callout p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin: 0;
+      color: #e8e8e8;
+    }
+
+    .closing-callout a {
+      color: var(--gold);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+
+      .principles-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Adam Kolt <sup>MBA</sup></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="approach.html" class="active">Approach</a>
+        <a href="impact/b2b-sales-academy.html">Case Studies</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-phone">&#9990; 714-273-2300</span>
+        <a href="mailto:adam.r.kolt@gmail.com" class="btn-contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="content">
+
+      <!-- HERO -->
+      <div class="approach-hero">
+        <h1>How I Build Enablement</h1>
+        <p class="lede">
+          I treat enablement as a system, not a series of training events. Sellers don&rsquo;t fail because they lack
+          content &mdash; they fail because the content, the methodology, the tools, and the manager cadence
+          aren&rsquo;t pulling in the same direction. My job is to build the <strong>operating layer</strong> that
+          makes them coherent &mdash; and to measure it by what changes in the field.
+        </p>
+      </div>
+
+      <!-- THREE PRINCIPLES -->
+      <div class="principles-grid">
+
+        <!-- Principle 1 -->
+        <div class="principle-card">
+          <div class="principle-icon"><img src="images/Academy_Icon.png" alt=""></div>
+          <div class="principle-num">Principle 01</div>
+          <h3>Anchored to the Live Sales Motion</h3>
+          <p>Education only works when it mirrors how sellers actually sell. Learning tracks, certifications, and
+            assessments map directly to the stage gates, exit criteria, and discovery rhythms of the live sales
+            methodology &mdash; not to a generic L&amp;D framework. Sellers learn in the same shape they&rsquo;re
+            measured.</p>
+          <a class="see-case" href="impact/b2b-sales-academy.html">See B2B Sales Academy &rsaquo;</a>
+        </div>
+
+        <!-- Principle 2 -->
+        <div class="principle-card">
+          <div class="principle-icon"><img src="images/Content_Icon.png" alt=""></div>
+          <div class="principle-num">Principle 02</div>
+          <h3>Powered by an AI-Native Content Engine</h3>
+          <p>A CMS as the single source of truth. AI tools (CoPilot + Claude) generating discovery banks, objection
+            libraries, and battle cards at scale. A RAG assistant on GPT-4o grounded in CRM, tariffs, and product
+            documentation &mdash; answering reps and customers in the flow of work. Content velocity is no longer the
+            bottleneck.</p>
+          <a class="see-case" href="impact/content-operations.html">See Content Operations &rsaquo;</a>
+        </div>
+
+        <!-- Principle 3 -->
+        <div class="principle-card">
+          <div class="principle-icon"><img src="images/Field_Icon.png" alt=""></div>
+          <div class="principle-num">Principle 03</div>
+          <h3>Measured by What Changes in the Field</h3>
+          <p>Certification completion, ramp time, conversion rate, target attainment, content adoption &mdash; KPIs
+            chosen because a manager can act on them the same week. Manager-led reinforcement turns the operating
+            cadence into a coaching surface, so learning compounds rather than evaporates.</p>
+          <a class="see-case" href="impact/field-enablement.html">See Field Enablement &rsaquo;</a>
+        </div>
+
+      </div>
+
+      <!-- ENGAGEMENT PROCESS -->
+      <div class="process-section">
+        <h2>How a Typical Engagement Unfolds</h2>
+        <p class="process-lede">
+          Whether the starting point is a new product launch, a struggling channel, or a fragmented onboarding flow,
+          the sequence is the same.
+        </p>
+
+        <div class="process-grid">
+
+          <div class="process-step">
+            <div class="step-num">Step 01</div>
+            <h4>Diagnose</h4>
+            <p>Where&rsquo;s the gap &mdash; content, methodology, tools, or manager cadence? Talk to sellers,
+              managers, and customers. Look at the data, not the assumptions.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">Step 02</div>
+            <h4>Design</h4>
+            <p>Role-based learning paths anchored to the live sales motion. Certification tracks tied to stage gates.
+              Content architecture and ownership model defined upfront.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">Step 03</div>
+            <h4>Deploy</h4>
+            <p>Blended delivery (cohorts, live, recorded, CMS), AI-assisted content production, and embedded
+              manager-led reinforcement. Build adoption into the cadence, not on top of it.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">Step 04</div>
+            <h4>Measure</h4>
+            <p>KPIs tied to revenue and operational accuracy &mdash; certification completion, ramp time, conversion,
+              target attainment, content adoption. Iterate based on field feedback, not opinions.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CLOSING CALLOUT -->
+      <div class="closing-callout">
+        <h3>Want the proof?</h3>
+        <p>Each principle is grounded in a real engagement. The case studies walk through the messy middle &mdash;
+          the constraints, the trade-offs, and the numbers. Start with the
+          <a href="impact/b2b-sales-academy.html">B2B Sales Academy</a> or browse the full set on the
+          <a href="index.html">home page</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2026 Adam Kolt &mdash; <a href="mailto:adam.r.kolt@gmail.com">adam.r.kolt@gmail.com</a> &mdash;
+    714-273-2300
+  </footer>
+
+</body>
+
+</html>
