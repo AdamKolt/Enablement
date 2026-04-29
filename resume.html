@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume – Adam Kolt MBA | Product Education &amp; Enablement Lead</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 21px;
+      padding-bottom: 0;
+    }
+
+    .resume-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .resume-name sup {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      vertical-align: super;
+      margin-left: 4px;
+    }
+
+    .resume-title {
+      font-size: 15px;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .resume-contact {
+      font-size: 13.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      text-align: right;
+    }
+
+    .resume-contact a {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .resume-section {
+      margin-bottom: 28px;
+    }
+
+    .resume-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--navy);
+      border-bottom: 3px solid var(--gold);
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+    }
+
+    .resume-role {
+      margin-bottom: 16px;
+    }
+
+    .resume-role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+
+    .resume-role-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .resume-role-date {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .resume-role-company {
+      font-size: 14px;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .resume-role ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .resume-role ul li {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .resume-role ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .rc-skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .rc-skill-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+
+    .rc-skill-group ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .rc-skill-group ul li {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.55;
+      padding-left: 13px;
+      position: relative;
+    }
+
+    .rc-skill-group ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .cert-item {
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    .cert-item strong {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .cert-item::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .download-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .download-btn {
+      background: #D9D9D9;
+      color: #000;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .download-btn:hover {
+      background: #c8c8c8;
+    }
+
+    .summary-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .summary-bullets li {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .summary-bullets li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .skills-line {
+      font-size: 13.5px;
+      color: #333;
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    .tech-stack-line {
+      font-size: 13.5px;
+      color: #333;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .role-intro {
+      font-size: 13px;
+      color: #444;
+      font-style: italic;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .role-context {
+      font-size: 11.5px;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Adam Kolt <sup>MBA</sup></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="impact/b2b-sales-academy.html">Case Studies</a>
+        <a href="resume.html" class="active">Resume</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-phone">&#9990; 714-273-2300</span>
+        <a href="mailto:adam.r.kolt@gmail.com" class="btn-contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="content">
+
+      <div class="download-bar">
+        <a href="Adam Kolt - Sales Enablement Leader.pdf" download class="download-btn">Download
+          PDF</a>
+      </div>
+      <br>
+
+      <!-- RESUME HEADER -->
+      <div class="resume-header">
+        <div>
+          <div class="resume-name">Adam Kolt <sup>MBA</sup></div>
+          <div class="resume-title" style="margin-bottom:0;">Product Education &amp; Enablement Lead
+          </div>
+        </div>
+
+        <div class="resume-contact">
+          <span>714-273-2300 &nbsp;·&nbsp; <a href="mailto:adam.r.kolt@gmail.com">adam.r.kolt@gmail.com</a></span>
+          <span>US Citizen&nbsp;·&nbsp; Open to relocate/travel</span>
+
+          <span>
+            <a href="https://adamkolt.github.io/Portfolio" target="_blank"> adamkolt.github.io/Portfolio</a>
+          </span>
+
+          <span><a href="https://linkedin.com/in/AdamKolt" target="_blank"> linkedin.com/in/AdamKolt</a>
+
+          </span>
+
+
+        </div>
+
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="resume-section">
+        <div class="resume-section-title">Summary</div>
+        <p style="font-size:13.5px;color:#333;line-height:1.65;margin-bottom:10px;">
+          Hands-on enablement builder with 20+ years translating <strong>complex multi-product B2B portfolios</strong>
+          into <strong>role-based education, certification, and applied training</strong> that move
+          time-to-productivity, adoption, and revenue. Combines instructional design, AI-native content operations,
+          and deep B2B sales and technology fluency &mdash; comfortable building enablement systems from scratch in
+          multi-product (SaaS, services, hardware) ecosystems and delivering live workshops, simulations, and
+          certifications directly.
+        </p>
+        <ul class="summary-bullets">
+          <li>Built and ran the <strong>B2B Sales Academy</strong> &mdash; a two-tier (Sales Associate / Sales Expert)
+            certification program for <strong>200+ frontline sellers, account managers, and channel partners</strong>
+            across Mobile, Fixed, and ICT &mdash; <strong>85% completion</strong>, <strong>15% post-certification
+              performance uplift</strong>, ramp cut from <strong>4 to 2 months</strong>.</li>
+          <li>Architected role-based learning tracks across direct field, indirect partners, retail, telemarketing,
+            and digital channels &mdash; anchored to live sales methodology (<em>Lead &rarr; Qualified &rarr; Bid
+              &rarr; Revise &rarr; Complete &rarr; Cashed</em>) with embedded weekly performance reviews as a
+            manager-coaching surface.</li>
+          <li>Stood up an <strong>AI-native content factory</strong> &mdash; CoPilot + Claude generating discovery
+            banks, objection libraries, battle cards, cheat sheets, competitive teardowns, and certification quizzes
+            at scale &mdash; plus a <strong>RAG-based assistant on GPT-4o</strong> grounded in CRM, regulatory tariff
+            libraries, and product documentation.</li>
+          <li>Restructured a 30-product SMB portfolio into <strong>six needs-based solution areas</strong> &mdash;
+            adopted as the standard GTM taxonomy across sales, marketing, and digital channels &mdash; powered by a
+            digital storefront with QR-code-to-order flows.</li>
+          <li>Built the <strong>customer enablement program</strong> at Saber Software &mdash; training curricula,
+            on-site rollout support, and a <strong>national call center</strong> with tiered escalation playbook and
+            knowledge base &mdash; enabling deployment across <strong>13 states and hundreds of counties</strong>.
+          </li>
+          <li>Lifted <strong>outbound conversion from 18% to 25%</strong> by delivering battle cards, objection
+            handling guides, discovery flowcharts, and competitive teardowns directly into the rep workflow.</li>
+        </ul>
+      </div>
+
+      <!-- CAPABILITIES & STACK -->
+      <div class="resume-section">
+        <div class="resume-section-title">Capabilities &amp; Stack</div>
+        <div class="rc-skills-grid">
+          <div class="rc-skill-group">
+            <label>Enablement Craft</label>
+            <ul>
+              <li>Product Mastery Frameworks</li>
+              <li>Role-Based Learning Paths</li>
+              <li>Certification Program Design</li>
+              <li>Instructional Design</li>
+              <li>Live Workshop &amp; Simulation Delivery</li>
+              <li>Knowledge Validation &amp; Assessment</li>
+              <li>Learning Measurement &amp; Impact Analytics</li>
+              <li>AI-Native Enablement</li>
+            </ul>
+          </div>
+          <div class="rc-skill-group">
+            <label>B2B Sales &amp; Commercial Acumen</label>
+            <ul>
+              <li>Multi-Product Systems Thinking</li>
+              <li>Product-to-Value Translation</li>
+              <li>Sales Playbooks &amp; Battle Cards</li>
+              <li>Onboarding &amp; Ramp Acceleration</li>
+              <li>Coaching Cadence &amp; Manager Enablement</li>
+              <li>Channel &amp; Partner Enablement</li>
+              <li>B2B Sales Fluency</li>
+              <li>Cross-Functional Influence Without Authority</li>
+            </ul>
+          </div>
+          <div class="rc-skill-group">
+            <label>Enablement Stack</label>
+            <ul>
+              <li>CMS / LMS</li>
+              <li>Confluence &middot; SharePoint</li>
+              <li>Claude &middot; Microsoft CoPilot</li>
+              <li>NotebookLM &middot; Copilot Studio</li>
+              <li>GPT-4o (Azure OpenAI) &middot; RAG</li>
+              <li>Salesforce &middot; HubSpot &middot; Dynamics 365</li>
+              <li>CPQ &middot; E-signature</li>
+              <li>Power BI &middot; Advanced Excel &middot; SQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="resume-section">
+        <div class="resume-section-title">Experience</div>
+
+        <!-- Ooredoo — SMB Sales Enablement Director -->
+        <div class="resume-role">
+          <div class="resume-role-header">
+            <span class="resume-role-title">SMB Sales Enablement Director</span>
+            <span class="resume-role-date">Doha, Qatar | 06/2020 &ndash; 04/2026</span>
+          </div>
+          <div class="resume-role-company">Ooredoo Telecom</div>
+          <div class="role-context">
+            Ooredoo is a fast-paced multi-national corporation offering telecom, cloud, and ICT services in 13
+            countries.
+          </div>
+          <p class="role-intro">
+            Owned the <strong>sales and partner enablement function</strong> for the SMB division &mdash; designing
+            and delivering role-based education, certification, content, and AI-native learning systems across a
+            <strong>30-product multi-line portfolio</strong> (Mobile, Fixed, ICT). Hands-on builder and instructor;
+            partnered cross-functionally with Product, Marketing, Operations, and Customer Success.
+          </p>
+          <ul>
+            <li>Built and ran the <strong>B2B Sales Academy</strong> &mdash; a two-tier (Sales Associate / Sales
+              Expert) certification program for <strong>200+ frontline sellers, account managers, and channel
+                partners</strong> across Mobile, Fixed, and ICT, anchored to Ooredoo&rsquo;s sales stages methodology
+              (<em>Lead &rarr; Qualified &rarr; Bid &rarr; Revise &rarr; Complete &rarr; Cashed</em>). Orchestrated a
+              bench of 15 product-manager instructors with a blended delivery model (cohorts, weekly cadence, boot
+              camps, weekly performance reviews) and recorded sessions on the enablement CMS.</li>
+            <li>Delivered live workshops, simulations, and applied learning sessions personally &mdash;
+              scenario-based objection handling, value articulation, competitive positioning, and end-to-end sales
+              lifecycle education tailored to each role.</li>
+            <li>Achieved <strong>85% certification completion rate</strong> and a <strong>15% post-certification
+                performance uplift</strong> evident in target achievement. Academy quality reflected positively in
+              CSAT and NPS across the commercial organization.</li>
+            <li>Cut frontline <strong>agent ramp-up time by 50%</strong> (4 months &rarr; 2 months) by replacing
+              fragmented onboarding with structured learning paths, certification checkpoints, and manager-led
+              reinforcement.</li>
+            <li>Built the <strong>enablement CMS</strong> as the single source of truth for sales content &mdash;
+              defined content taxonomy, ownership model, version control, review cadence, and publishing workflow
+              with editorial governance &mdash; feeding the Business Shop catalog, RAG sales assistant, rep workflow,
+              and partner-facing tools from one curated repository.</li>
+            <li>Stood up an <strong>AI-native content factory</strong> using CoPilot and Claude &mdash; producing
+              discovery question banks, objection-and-response libraries, industry use-cases, cheat sheets,
+              competitive teardowns, and MCQ certification quizzes at the volume the program required.</li>
+            <li>Deployed a <strong>RAG-based AI knowledge assistant on GPT-4o</strong> integrated with CRM,
+              regulatory tariff libraries, and product documentation &mdash; functioning as a real-time enablement
+              assistant for customers, reps, and partners.</li>
+            <li>Launched the <strong>Ooredoo Business Shop digital storefront</strong> &mdash; a unified product
+              catalog covering ~30 products across Mobile, Fixed, and ICT, with QR-code-to-order flows and seller-
+              and customer-facing views &mdash; the central hub for product mastery and order execution.</li>
+            <li>Led an enterprise initiative to <strong>revamp the B2B order forms</strong> &mdash; consolidated
+              fragmented legacy paper and PDF forms into a standardized library of digital forms with embedded
+              validation, e-signature, and CRM hand-off &mdash; cutting rep training overhead, order errors, and
+              quote-to-order cycle time.</li>
+            <li>Restructured the SMB products portfolio into <strong>six needs-based solution areas</strong>
+              validated by customer beta testing &mdash; adopted as the standard GTM taxonomy across sales,
+              marketing, and digital channels.</li>
+            <li>Designed enablement programs for the SOHO indirect channel &mdash; <strong>5 partner firms with 100+
+                frontline agents</strong> &mdash; equipped with connected-tablet stack (CMS, CRM, Field App), co-sell
+              playbooks, and commercial bundles that enabled partners to sell, onboard, and retain customers
+              independently.</li>
+            <li>Lifted <strong>outbound conversion from 18% to 25%</strong> through battle cards, objection-handling
+              guides, discovery flowcharts, and competitive teardowns delivered directly into the rep workflow.</li>
+            <li>Defined and tracked enablement KPIs &mdash; certification completion, ramp time, target achievement,
+              conversion rate, content adoption &mdash; refining programs based on data and field feedback.</li>
+          </ul>
+        </div>
+
+        <!-- Ooredoo — Assistant Director Solutions -->
+        <div class="resume-role">
+          <div class="resume-role-header">
+            <span class="resume-role-title">Assistant Director Solutions</span>
+            <span class="resume-role-date">Doha, Qatar | 09/2014 &ndash; 06/2020</span>
+          </div>
+          <div class="resume-role-company">Ooredoo Telecom</div>
+          <ul>
+            <li>Led technical sales operations for a <strong>$600M B2B business unit</strong> &mdash; coaching a team
+              of sales engineers and solutions architects across the full sales lifecycle: bid decision, solution
+              development, proposals, customer presentations, closing, and contract negotiations.</li>
+            <li>Drove the lifting of <strong>bid-to-win ratio to 28%</strong> through pipeline hygiene, disciplined
+              qualification, and structured deal review coaching.</li>
+            <li>Closed a <strong>$50M global secure network</strong> for 110 diplomatic missions (Ministry of Foreign
+              Affairs) &mdash; backhauling voice, data, and video conferencing &mdash; through consultative pursuit,
+              partner orchestration, and contract negotiation.</li>
+            <li>Closed a <strong>$65M ten-year government frame agreement</strong> for data center services &mdash;
+              colocation, hosting, managed backup, internet, and WAN connectivity.</li>
+          </ul>
+        </div>
+
+        <!-- EDS -->
+        <div class="resume-role">
+          <div class="resume-role-header">
+            <span class="resume-role-title">Director S&amp;LG Accounts</span>
+            <span class="resume-role-date">Raleigh, NC | 06/2009 &ndash; 09/2014</span>
+          </div>
+          <div class="resume-role-company">Electronic Data Systems</div>
+          <ul>
+            <li>Owned P&amp;L, executive client relationships, and partner/contract management of a portfolio of
+              State &amp; Local Government projects &mdash; securing <strong>100% renewal</strong> and contract
+              extensions through trusted-advisor education and structured client engagement.</li>
+            <li>Directed a three-year <strong>$25M Electronic Medical Records modernization</strong> at the NC DHHS
+              &mdash; supervised HIPAA-compliant COTS customization and rollout across <strong>100 counties</strong>
+              with FTEs, partners, and contractors &mdash; including end-user training and certification programs.
+            </li>
+            <li>Recovered a <strong>$12M Maryland Retirement Services modernization</strong> &mdash; negotiated
+              baseline scope, deployed strict change management, and stood up an offshore development team to deliver
+              against a complex legacy mainframe environment.</li>
+          </ul>
+        </div>
+
+        <!-- Saber Consulting -->
+        <div class="resume-role">
+          <div class="resume-role-header">
+            <span class="resume-role-title">Systems Development Director</span>
+            <span class="resume-role-date">Portland, OR | 08/2002 &ndash; 06/2009</span>
+          </div>
+          <div class="resume-role-company">Saber Software</div>
+          <ul>
+            <li>Built the <strong>customer enablement program</strong> with training curricula and on-site support
+              &mdash; stood up a <strong>national call center</strong> with tier-1/tier-2 agent training, tiered
+              escalation playbook, and knowledge base &mdash; equipping county election officials and state
+              implementation teams to operate the platform independently across <strong>13 states and hundreds of
+                counties</strong>.</li>
+            <li>Scaled annual revenue from <strong>$5.8M to $57.8M in 4 years</strong> spearheading the functional
+              design and national rollout of a market-disruptive Elections Management and Voter Registration system.
+            </li>
+            <li>Coordinated complex business requirements from diverse stakeholders to architect a highly configurable
+              COTS solution, enabling rapid multi-state deployment without custom code overhead.</li>
+            <li>Designed and implemented a deployment blueprint and national sales model across <strong>13
+                states</strong>, directly positioning the company for a successful acquisition by EDS in 2008.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- EDUCATION & CERTS -->
+      <div class="resume-section">
+        <div class="resume-section-title">Education &amp; Certification</div>
+        <div class="cert-grid">
+          <div class="cert-item"><strong>MBA, Marylhurst University &mdash; Portland, OR</strong></div>
+          <div class="cert-item"><strong>B.S., Electrical Engineering, Qatar University</strong></div>
+          <div class="cert-item"><strong>Stanford Certified Project Manager (SCPM)</strong></div>
+          <div class="cert-item"><strong>PMP, Project Management Institute</strong></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2026 Adam Kolt MBA &mdash; <a href="mailto:adam.r.kolt@gmail.com">adam.r.kolt@gmail.com</a> &mdash;
+    714-273-2300
+  </footer>
+
+</body>
+
+</html>
